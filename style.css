@@ -19,9 +19,13 @@
     border: solid rgb(98, 104, 99);
     opacity: 0.70;
     border-radius: 1em;
-    margin:3em
-}
+    margin:3em;
 
+}
+.navbarre a {
+
+    text-decoration: none;
+}
 
 
 .navbarre{
@@ -29,6 +33,7 @@
     height:3vh;
     display: flex;
     align-items: center;
+
 }
 
 
