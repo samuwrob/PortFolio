@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#navbarreid{
+
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+
+
+    background-color: rgb(93, 214, 174);
+    font-size: 1em;
+
+    width: auto;
+    border: solid rgb(98, 104, 99);
+    opacity: 0.70;
+    border-radius: 1em;
+    margin:3em
+}
+
+
+
+.navbarre{
+    width: auto;
+    height:3vh;
+    display: flex;
+    align-items: center;
+}
+
+
+#logoEcole{
+float: right;
+height: 10em;
+width: 10em;
+margin: 3em;
+
+}
+
+#photopresentation{
+    float: left;
+    height: 20em;
+    width: 15em;
+    border: 1em double rgb(93, 214, 174) ;
+    margin: 3em;
+    opacity: 1 ;
+
+}
+/* image libre de droit */
+body{
+    background-image: url(ripples.png)
+
+}
+
+
+.clearfloat{
+    clear: both;
+}
+#textepresentation{
+    font-size: 1em;
+}
+
+.lienscliquables{
+    height: 2em;
+    width: 2em;
+}
+
+#headerCv{
+    font-size: 2em;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 2em;
+}
+
+#tableauCV{
+    margin:2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1em double  rgb(93, 214, 174) ;
+    border-radius: 1em;
+
+
+}
+
+.categorieCV{
+
+    text-align: center;
+    font-size: large;
+    width: 33%;
+    min-height:100%;
+
+
+}
+
+
+#headerContact{
+    margin:3em;
+}
+
+
+.formulaire {
+
+    display:flex;
+    flex-direction: column;
+    border: 0.1em solid  rgb(93, 214, 174); 
+    margin:3em;
+    padding:1em;
+}
+
+.formulaires{
+    width: 15%;
+}
+
+
+
+#headerRecommandation{
+    margin:3em;
+}
+#recommandations{
+   margin: 3em;
+}
