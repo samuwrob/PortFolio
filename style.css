@@ -56,7 +56,7 @@ margin: 3em;
 }
 /* image libre de droit */
 body{
-    background-image: url(ripples.png)
+    background-image: url(images/ripples.png)
 
 }
 
@@ -128,4 +128,8 @@ body{
 }
 #recommandations{
    margin: 3em;
+}
+
+#headerprojet{
+    margin: 3em;
 }
