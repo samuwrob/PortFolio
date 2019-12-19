@@ -106,6 +106,7 @@ body{
 
 #headerContact{
     margin:3em;
+    
 }
 
 
@@ -124,8 +125,13 @@ body{
 
 
 
+
+
 #headerRecommandation{
     margin:3em;
+    border: 0.5em inset rgb(3, 105, 63);
+    padding: 2em;
+    display: inline-block
 }
 #recommandations{
    margin: 3em;
@@ -137,13 +143,15 @@ body{
 
 .projet{
     margin: 3em;
-
+    border: 0.1em solid rgb(93, 214, 174);
+    padding: 1em;
 
 }
 #phototechnoProjet{
     width: 5em;
     height: 5em;
     float:right;
+    
 
 }
 .photoprojet{
