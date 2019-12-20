@@ -18,7 +18,7 @@ body{
 }
 
 
-/* création de la barre de navigation sur la page index */ 
+    /* création de la barre de navigation sur la page index */ 
 
 #navbarreid{
     margin:3em;
@@ -39,7 +39,7 @@ body{
 
 }
 
-/* contenu de la barre de navigation */
+    /* contenu de la barre de navigation */
 
 .navbarre{
 
@@ -49,7 +49,7 @@ body{
     height:3vh;
 }
 
-/* id pour la résolution et placement du logo campus academy */
+    /* id pour la résolution et placement du logo campus academy */
 
 #logoEcole{
     float: right;
@@ -59,7 +59,7 @@ body{
 
 }
 
-/* id pour la résolution , placement  et cadre de ma photo */
+    /* id pour la résolution , placement  et cadre de ma photo */
 #photopresentation{
     margin: 3em;
     height: 20em;
@@ -72,7 +72,7 @@ body{
 
 }
 
-/* définition des header des autres pages */
+    /* définition des header des autres pages */
 
 .header
 {
@@ -86,20 +86,29 @@ body{
     
 
 
-/* clearfloat pour "casser la flotaison" d'élements flottant, il sera utilisé dans une bonne partie de mon HTML */
+    /* clearfloat pour "casser la flotaison" d'élements flottant, il sera utilisé dans une bonne partie de mon HTML */
 
 .clearfloat{
     clear: both;
 }
 
-/* définition de la résolution pour les images cliquables de la page CV */
+
+    /* suppression de du surlignage des liens cliquables */
 
 .lienscliquables{
-    height: 2em;
-    width: 2em;
+
+    text-decoration: none;
+
+}
+    /* définition de la résolution pour les images cliquables de la page CV */
+
+.imagecliquable{
+    height: 5em;
+    width: 5em;
 }
 
-/* définition de marge, taille de police et placement de mon header de la page CV */
+    /* définition de marge, taille de police et placement de mon header de la page CV */
+
 #headerCv{
     margin: 2em;
     font-size: 2em;
@@ -109,7 +118,7 @@ body{
     align-items: center;
 }
 
-/* creation de mon "conteneur" de ma page CV */
+    /* creation de mon "conteneur" de ma page CV */
 
 #tableauCV{
     margin:2em;
@@ -122,7 +131,7 @@ body{
     border-radius: 1em;
 }
 
-/* creation des "éléments" dans ma page CV */
+    /* creation des "éléments" dans ma page CV */
 
 .categorieCV{
 
@@ -136,7 +145,7 @@ body{
 
 
 
-/* création des formulaires des pages concernés */
+    /* création des formulaires des pages concernés */
 
 .formulaire {
     margin:3em;
@@ -148,21 +157,21 @@ body{
     border: 0.1em solid  rgb(93, 214, 174); 
 }
 
-/* gestion de l'espace de certains champs du formulaire */
+    /* gestion de l'espace de certains champs du formulaire */
 
 .formulaires{
     width: 15%;
 }
 
-/* creation des recommandation que j'ai reçu
-n'ayant pas encore vu le PHP, j'ai mis une image */
+    /* creation des recommandation que j'ai reçu
+    n'ayant pas encore vu le PHP, j'ai mis une image */
 
 
 #recommandations{
    margin: 3em;
 }
 
-/* creation de la partie présentation de projets */
+    /* creation de la partie présentation de projets */
 
 .projet{
     margin: 3em;
@@ -171,7 +180,7 @@ n'ayant pas encore vu le PHP, j'ai mis une image */
     border: 0.1em solid rgb(93, 214, 174);
 }
 
-/* gestion de la taille des logos des technologies pour différents projets */
+    /* gestion de la taille des logos des technologies pour différents projets */
 
 .phototechnoProjet{
     width: 5em;
@@ -181,8 +190,149 @@ n'ayant pas encore vu le PHP, j'ai mis une image */
     
 
 }
-/* gestion de la taille des images des technologies pour différents projets */
+    /* gestion de la taille des images des technologies pour différents projets */
 .photoprojet{
     width: 20em;
     height: 20em;
 }
+
+    /* modification du code pour gérer le responsive */
+
+@media  (min-width: 320px)and (max-width:1000px){
+
+        /* barre de menu en colonne */
+    #navbarreid{
+        margin:1em;
+    
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    
+    
+        background-color: rgb(93, 214, 174);
+        font-size: 1em;
+        opacity: 0.70;
+    
+        border: solid rgb(98, 104, 99);
+        border-radius: 1em;
+        
+    
+    }
+
+        /* modification de taille */
+
+    .photoinfo{
+        width: 100%;
+        height: 10em;
+
+    }
+        /* modification de des marges */
+
+    .header
+{
+    margin:0.5em;
+    padding: 0.5em;
+
+    border: 0.5em inset rgb(3, 105, 63);
+
+    display: inline-block
+}
+
+
+        /* modification de taille des entrées de formulaire */
+    .formulaires{
+        width: 50%;
+    }
+
+
+    .formulaire {
+        margin:0.5em;
+        padding:0.5em;
+    
+        display:flex;
+        flex-direction: column;
+    
+        border: 0.1em solid  rgb(93, 214, 174); 
+    }
+        /* modification des marges */
+
+    #recommandations{
+        margin: 0.5em;
+     }
+
+        /* modification de la taille */
+     .phototravaux{
+     height: 20em;
+     width: 20em;
+
+     }
+
+        /* modification de la taille et de la marge */
+     #headerCv{
+        margin: 0.5em;
+        font-size: 1em;
+    
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+
+        /* modification de l'alignement */
+
+    .categorieCV{
+
+        text-align: justify;
+        font-size: medium;
+
+        width: 100%;
+        min-height:100%;
+    
+    }
+        /* modification de l'alignement */
+     #tableauCV{
+        margin:0.5em;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        border:1em double  rgb(93, 214, 174) ;
+        border-radius: 1em;
+}
+        /* modification de la taille */
+ #tableauCV img {
+
+    height: 15em;
+    width: 15em;
+
+}
+        /* modification de la taille et de la marge */
+.projet{
+    margin: 0.5em;
+    padding: 0.2em;
+
+    border: 0.1em solid rgb(93, 214, 174);
+}
+
+
+        /* modification de la taille */
+.phototechnoProjet{
+    width: 3em;
+    height: 3em;
+
+    float:right;
+    
+
+}
+        /* modification de la taille */
+.photoprojet{
+    width: 10em;
+    height: 10em;
+}
+
+
+}
+
+
+
